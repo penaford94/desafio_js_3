@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafío 3 - Cuatro colores | Springfield</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">Springfield · Desafío 3</p>
+      <h1>Cuatro colores y teclado</h1>
+      <p>
+        Haz clic en los cuatro bloques para pintarlos de negro
+        y usa las teclas indicadas.
+      </p>
+    </header>
+
+    <section class="panel" aria-labelledby="titulo-click">
+      <h2 id="titulo-click">
+        1. Clic: azul, rojo, verde y amarillo
+      </h2>
+
+      <p class="instructions">
+        Cada bloque cambia a negro al hacer clic.
+      </p>
+
+      <div class="color-grid">
+        <div
+          id="azul"
+          class="color-box"
+          style="width: 200px; height: 200px; background-color: blue;"
+        >
+          Azul
+        </div>
+
+        <div
+          id="rojo"
+          class="color-box"
+          style="width: 200px; height: 200px; background-color: red;"
+        >
+          Rojo
+        </div>
+
+        <div
+          id="verde"
+          class="color-box"
+          style="width: 200px; height: 200px; background-color: green;"
+        >
+          Verde
+        </div>
+
+        <div
+          id="amarillo"
+          class="color-box"
+          style="width: 200px; height: 200px; background-color: yellow;"
+        >
+          Amarillo
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="titulo-teclado">
+      <h2 id="titulo-teclado">
+        2. Teclado: a, s, d, q, w, e
+      </h2>
+
+      <p class="instructions">
+        <strong>a</strong>: rosado ·
+        <strong>s</strong>: naranjo ·
+        <strong>d</strong>: celeste ·
+        <strong>q</strong>: morado ·
+        <strong>w</strong>: gris ·
+        <strong>e</strong>: café
+      </p>
+
+      <div
+        id="key"
+        class="color-box key-box"
+        style="width: 200px; height: 200px; background-color: white; border: 2px solid black;"
+      >
+        key
+      </div>
+
+      <div
+        id="nuevos-divs"
+        class="color-grid created-grid"
+        aria-live="polite"
+      ></div>
+    </section>
+  </main>
+
+  <script src="assets/js/4_colores.js"></script>
+</body>
+</html>

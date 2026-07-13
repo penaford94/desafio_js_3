@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background: #f7d117;
+}
+
+.page-shell {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 56px;
+}
+
+.hero,
+.panel {
+  background: #ffffff;
+  border: 4px solid #111827;
+  border-radius: 18px;
+  box-shadow: 8px 8px 0 #5aa7e8;
+}
+
+.hero {
+  margin-bottom: 28px;
+  padding: 28px;
+}
+
+.hero h1,
+.panel h2,
+.hero p {
+  margin-top: 0;
+}
+
+.hero p:last-child,
+.panel > :last-child {
+  margin-bottom: 0;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  border: 2px solid #111827;
+  border-radius: 999px;
+  background: #ff8fab;
+  font-weight: 700;
+}
+
+.panel {
+  margin-bottom: 28px;
+  padding: 24px;
+}
+
+.instructions {
+  margin-bottom: 20px;
+}
+
+.paint-target {
+  min-height: 120px;
+  margin: 0;
+  padding: 24px;
+  border: 3px dashed #111827;
+  border-radius: 14px;
+  background: green;
+  color: #111827;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.color-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.color-box {
+  display: grid;
+  place-items: center;
+  flex: 0 0 200px;
+  color: #111827;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  cursor: pointer;
+  user-select: none;
+}
+
+.key-box {
+  margin-bottom: 20px;
+}
+
+.created-grid div {
+  border: 2px solid #111827;
+  border-radius: 14px;
+}
+
+@media (max-width: 520px) {
+  .page-shell {
+    width: min(100% - 20px, 1100px);
+    padding-top: 16px;
+  }
+
+  .hero,
+  .panel {
+    padding: 18px;
+    box-shadow: 5px 5px 0 #5aa7e8;
+  }
+}
